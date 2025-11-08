@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Web Vulnerability Tester</title>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <h1>Web Vulnerability Tester</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        </div>
+        <div id="scan-container">
+            <h1>Scan your site now</h1>
+            <form action="/scan" method="POST"  id="forms">
+                <input type="text" id="URL" name="url" placeholder="enter address here ">
+                <button type="submit" id="scan">scan</button>
+            </form>
+        </div>
+    </header>
+    <main>
+  <section id="results">
+   
+  <p>No scans yet — start your first scan above.</p>
+  </section>
+</main>
+<footer>
+    <p>Copyright © 2025 web vulnerability Tester</p>
+</footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
